@@ -1,0 +1,8 @@
+site_name: 'Docker Kubernetes Linux Proxmox Documentation'
+theme:
+  name: 'material'
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Setup: setup.md
+  - Usage: usage.md
