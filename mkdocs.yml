@@ -88,6 +88,13 @@ extra:
       link: https://www.youtube.com/@PCMagikHomeLab
     - icon: fontawesome/brands/discord
       link: https://discord.gg/FqS6pAmd5M
+    - icon: fontawesome/brands/github
+      link: https://github.com/pcmagik
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/mateusz-piekut-620b90273/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/pcmagik
+
   analytics:
     provider: google
     property: G-1CXE00KE0K
