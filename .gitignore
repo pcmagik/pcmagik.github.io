@@ -1,2 +1,13 @@
+# Wirtualne środowisko Python
+myenv/
+venv/
+.venv/
 
-/myenv/*
+# Pliki cache
+__pycache__/
+*.py[cod]
+
+# Pliki systemowe
+.DS_Store
+.vscode/
+.idea/
