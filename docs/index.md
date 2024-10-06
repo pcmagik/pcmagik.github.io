@@ -2,7 +2,6 @@
 
 For full documentation visit [github.com](https://github.com/pcmagik).
 
-
 ## 🔭 About Me
 
 I am an experienced IT specialist with a passion for everything related to Linux, automation, and DevOps. Over the last twelve years, I've developed skills that have allowed me to design, implement, and manage technologically advanced infrastructures.
