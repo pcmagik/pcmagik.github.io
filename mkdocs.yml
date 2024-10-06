@@ -21,7 +21,7 @@ nav:
 #  - About: about.md
 theme:
   name: material
-  logo: 0dq28DF.png
+  logo: logo.png
   favicon: favicon.png
   features:
     - navigation.footer
