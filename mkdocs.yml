@@ -6,3 +6,93 @@ nav:
   - Overview: overview.md
   - Setup: setup.md
   - Usage: usage.md
+
+
+site_name: PC Magik Docs
+site_url: https://pcmagik.github.io/documentation/
+nav:
+  - Home: index.md
+  - Overview: overview.md
+  - Setup: setup.md
+  - Usage: usage.md
+  - Donate / Get Support: support.md
+  - PC Magik Website: https://mateuszpiekut.pl
+
+#  - About: about.md
+theme:
+  name: material
+  logo: 0dq28DF.png
+  favicon: favicon.png
+  features:
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+plugins:
+    - social
+    - search
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@PCMagikHomeLab
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/FqS6pAmd5M
+  analytics:
+    provider: google
+    property: G-1CXE00KE0K
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to enhance your experience on our site, recognize your repeat visits and preferences, as well as to track the effectiveness of our documentation and the relevance of the content we provide. Your consent will help us improve our resources and ensure they meet your needs. You have the option to customize your cookie settings to best suit your privacy preferences. Your support in this helps us continually refine our content and tools to better serve you and the community."
+copyright: Copyright &copy; 2024 PC Magik
