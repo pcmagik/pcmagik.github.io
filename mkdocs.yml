@@ -1,12 +1,22 @@
 site_name: PC Magik Docs
 site_url: https://pcmagik.github.io/documentation/
+site_description: Technical documentation and guides for Linux, Docker, Kubernetes and Proxmox
+site_author: PC Magik
+
+# Usuń lub zakomentuj duplikaty site_name i nav z górnej części pliku
 nav:
-  - Home: index.md
-  - Overview: overview.md
-  - Setup: setup.md
-  - Usage: usage.md
-  - Donate / Get Support: support.md
-  - PC Magik Website: https://mateuszpiekut.pl
+  - Home: 
+    - Welcome: index.md
+    - About Me: about.md
+  - Documentation:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Support: support.md
+  - Links:
+    - PC Magik Website: https://mateuszpiekut.pl
+    - GitHub: https://github.com/pcmagik
+    - Docker Hub: https://hub.docker.com/u/pcmagik
 
 #  - About: about.md
 theme:
