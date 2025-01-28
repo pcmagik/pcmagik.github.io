@@ -1,5 +1,5 @@
 site_name: PC Magik Docs
-site_url: https://pcmagik.github.io/documentation/
+site_url: https://pcmagik.github.io/
 site_description: Technical documentation and guides for Linux, Docker, Kubernetes and Proxmox
 site_author: PC Magik
 
@@ -21,8 +21,8 @@ nav:
 #  - About: about.md
 theme:
   name: material
-  logo: logo.png
-  favicon: favicon.png
+  logo: images/logo.png
+  favicon: images/favicon.png
   features:
     - navigation.footer
     - content.code.copy
