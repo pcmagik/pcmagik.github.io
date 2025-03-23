@@ -1,4 +1,3 @@
-```markdown
 # Setting Up SSH Keys
 
 Follow the steps below to set up SSH keys:
@@ -55,4 +54,4 @@ sudo cp pcmagik-zurich-arm-docker-pcmagik-com.pub /home/ubuntu/
 sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com
 sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com.pub
 ```
-```
+
