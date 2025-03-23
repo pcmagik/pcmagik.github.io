@@ -28,6 +28,9 @@ nav:
     - Setup Proxmox: setup_proxmox.md
   - Linux:
     - Setup Linux: setup_linux.md
+    - Setup SSH: setup_ssh.md
+    - Setup User: setup_user.md
+    - Setup VPS: setup_vps.md
   - LLM:
     - Setup LLM: setup_llm.md
   - Tailscale:
