@@ -12,7 +12,6 @@ nav:
     - Welcome: index.md
     - About Me: about.md
   - Docker:
-    - Overview: overview_docker.md
     - Setup Ubuntu: setup_docker_ubuntu.md
     - Setup Debian: setup_docker_debian.md
     - Setup RHEL: setup_docker_rhel.md
@@ -20,49 +19,29 @@ nav:
     - Setup WSL: setup_docker_wsl.md
     - Setup Postinstallation: setup_docker_postinstallation.md
   - Kubernetes:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Kubernetes: setup_kubernetes.md
+  - Docker Swarm:
+    - Setup Docker Swarm: setup_docker_swarm.md
   - Cloud:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Cloud: setup_cloud.md
   - Proxmox:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Proxmox: setup_proxmox.md
   - Linux:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Linux: setup_linux.md
   - LLM:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup LLM: setup_llm.md
   - Tailscale:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Tailscale: setup_tailscale.md
   - Terraform:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Terraform: setup_terraform.md
   - Ansible:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Ansible: setup_ansible.md
   - Packer:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Packer: setup_packer.md
   - Jenkins:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
-  - Crowsnest:
-    - Overview: overview.md
-    - Setup: setup.md
-    - Usage: usage.md
+    - Setup Jenkins: setup_jenkins.md
+  - Crowdsec:
+    - Setup Crowdsec: setup_crowdsec.md
 
   - Support: support.md
   - Links:
