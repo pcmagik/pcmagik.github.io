@@ -110,6 +110,17 @@ cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub
 cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com
 ```
 
+## BONUS
+If You want to block root login and password authentication, you can do it with the following command:
+```bash
+sudo sed -i 's/^#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config && sudo sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && sudo systemctl restart sshd
+```
+
+
+---
+---
+---
+
 ## GitHub Authentication
 ```bash
 gh auth login
