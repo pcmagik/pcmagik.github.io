@@ -59,6 +59,10 @@ nav:
     - Overview: overview.md
     - Setup: setup.md
     - Usage: usage.md
+  - Crowsnest:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
 
   - Support: support.md
   - Links:
