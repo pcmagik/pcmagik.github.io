@@ -63,10 +63,9 @@ sudo apt install putty-tools
 ```bash
 puttygen ~/pcmagik-zurich-arm-docker-pcmagik-com -o ~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk
 ```
-
-# Chicken and Egg Problem
-## Now we need to copy the keys to local machine, and we have three options:
-
+---
+## Chicken and Egg Problem with SSH Keys
+Now we need to copy the keys to local machine, and we have three options:
 ### Option 1: Use `scp` (if password authentication is enabled)
 #### For Windows (PowerShell):
 ```powershell
