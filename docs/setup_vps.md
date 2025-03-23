@@ -10,6 +10,17 @@ sudo unminimize
 sudo apt-get update
 sudo apt-get install git gh -y
 
+# Add a new user and grant sudo privileges
+# Replace 'pcmagik' with your desired username
+sudo adduser pcmagik 
+sudo usermod -aG sudo pcmagik
+
+# Set up SSH keys for the new user
+
+
+
+
+
 # GitHub Authentication
 gh auth login
 
