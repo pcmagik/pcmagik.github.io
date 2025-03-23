@@ -61,9 +61,9 @@ sudo apt install putty-tools
 
 ### 6. Convert the Private Key to PPK Format
 
-````bash
+```bash
 puttygen ~/pcmagik-zurich-arm-docker-pcmagik-com -o ~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk
-````
+```
 ---
 ## Chicken and Egg Problem with SSH Keys
 Now we need to copy the keys to local machine, and we have three options:
