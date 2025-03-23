@@ -88,7 +88,7 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/@PCMagikHomeLab
+      link: https://www.youtube.com/@PCMagik
     - icon: fontawesome/brands/discord
       link: https://discord.gg/FqS6pAmd5M
     - icon: fontawesome/brands/github
