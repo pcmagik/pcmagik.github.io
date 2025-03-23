@@ -18,7 +18,7 @@ nav:
     - Setup RHEL: setup_docker_rhel.md
     - Setup Rootless: setup_docker_rootless.md
     - Setup WSL: setup_docker_wsl.md
-    - Setup Postinstallation: setup_postinstallation.md
+    - Setup Postinstallation: setup_docker_postinstallation.md
   - Kubernetes:
     - Overview: overview.md
     - Setup: setup.md
