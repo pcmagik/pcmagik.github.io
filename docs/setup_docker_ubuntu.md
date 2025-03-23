@@ -1,4 +1,4 @@
-# Docker Installation Guide
+# Install Docker Engine on Ubuntu
 
 ## Install Docker on Ubuntu
 
@@ -110,14 +110,6 @@ sudo docker run hello-world
 ```bash
 
 sudo docker run hello-world
-
-
-
-
-
-
-
-
 
 ---
 
