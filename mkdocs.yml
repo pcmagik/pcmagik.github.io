@@ -15,6 +15,27 @@ nav:
     - Overview: overview.md
     - Setup: setup.md
     - Usage: usage.md
+  - Kubernetes:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Cloud:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Proxmox:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Linux:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - LLM:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+
   - Support: support.md
   - Links:
     - PC Magik Website: https://mateuszpiekut.pl
