@@ -1,6 +1,6 @@
 # Docker Installation Guide
 
-## Install Docker on Debian/Ubuntu
+## Install Docker on Ubuntu
 
 ### OS Requirements
 To install Docker Engine, you need the 64-bit version of one of these Ubuntu versions:
