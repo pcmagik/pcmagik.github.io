@@ -13,7 +13,7 @@ nav:
     - About Me: about.md
   - Docker:
     - Overview: overview.md
-    - Setup: setup.md
+    - Setup: setup_docker_debian_ubuntu.md
     - Usage: usage.md
   - Kubernetes:
     - Overview: overview.md
