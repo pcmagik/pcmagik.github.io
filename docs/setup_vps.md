@@ -125,8 +125,6 @@ ssh użytkownik@adres_serwera -p port "mkdir -p ~/.ssh && chmod 700 ~/.ssh" && s
 ```
 
 ---
----
----
 
 ## GitHub Authentication
 ```bash
