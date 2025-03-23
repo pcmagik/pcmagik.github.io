@@ -68,6 +68,57 @@ sudo sh ./get-docker.sh --dry-run
 sudo sh ./get-docker.sh
 ```
 
+
+### Commnads to Check Docker Installation
+
+### Commands to Manage Docker Service
+
+For the older OS versions or WSL:
+```bash
+sudo service docker start
+sudo service docker status
+sudo service docker restart
+sudo service docker stop
+sudo service docker enable
+sudo service docker disable
+```
+
+For the newer OS versions:
+```bash
+sudo systemctl start docker
+sudo systemctl status docker
+sudo systemctl restart docker
+sudo systemctl stop docker
+sudo systemctl enable docker
+sudo systemctl disable docker
+```
+```
+### Verify Docker Installation
+```bash
+sudo docker --version
+sudo docker-compose --version
+sudo docker info
+sudo docker version
+sudo docker images
+sudo docker ps -a
+sudo docker network ls
+sudo docker volume ls
+sudo docker container ls -a
+sudo docker run hello-world
+```
+### Run a Test Container
+```bash
+
+sudo docker run hello-world
+
+
+
+
+
+
+
+
+
 ---
 
 ## Rootless Docker Installation
