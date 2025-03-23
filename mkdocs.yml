@@ -35,6 +35,26 @@ nav:
     - Overview: overview.md
     - Setup: setup.md
     - Usage: usage.md
+  - Tailscale:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Terraform:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Ansible:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Packer:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
+  - Jenkins:
+    - Overview: overview.md
+    - Setup: setup.md
+    - Usage: usage.md
 
   - Support: support.md
   - Links:
