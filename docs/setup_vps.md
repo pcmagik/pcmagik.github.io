@@ -115,7 +115,14 @@ If You want to block root login and password authentication, you can do it with 
 ```bash
 sudo sed -i 's/^#PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config && sudo sed -i 's/^PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && sudo systemctl restart sshd
 ```
-
+If you want to allow password authentication for the new user, you can do it with the following command:
+```bash
+sudo sed -i 's/^PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config && sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo systemctl restart sshd
+```
+When You have password authentication enabled, you can use the following command to connect to the server, make directory and copy the public key to the server:
+```bash
+ssh użytkownik@adres_serwera -p port "mkdir -p ~/.ssh && chmod 700 ~/.ssh" && scp -P port ~/.ssh/lokalizacja/klucz.pub użytkownik@adres_serwera:~/.ssh/authorized_keys
+```
 
 ---
 ---
