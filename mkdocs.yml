@@ -15,6 +15,7 @@ nav:
     - Overview: overview.md
     - Setup Ubuntu: setup_docker_ubuntu.md
     - Setup Debian: setup_docker_debian.md
+    - Setup RHEL: setup_docker_rhel.md
   - Kubernetes:
     - Overview: overview.md
     - Setup: setup.md
