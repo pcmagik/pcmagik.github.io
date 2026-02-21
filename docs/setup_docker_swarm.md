@@ -1,8 +1,12 @@
+---
+tags:
+  - Docker
+  - Swarm
+---
+
 # Docker Swarm Setup Guide
 
 A guide for initializing and managing a Docker Swarm cluster for container orchestration across multiple nodes.
-
----
 
 ## Concepts
 

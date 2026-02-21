@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <a href="https://github.com/pcmagik">
+    Check out my latest projects on GitHub
+  </a>
+{% endblock %}
+
+{% block hero %}
+  {% if page and page.meta and page.meta.hero %}
+  <section class="pcm-hero">
+    <div class="pcm-hero__inner">
+      <span class="pcm-hero__icon twemoji">
+        {% include ".icons/material/console-line.svg" %}
+      </span>
+      <h1>PC Magik Docs</h1>
+      <p>Technical guides for Linux, Docker, Kubernetes, and homelab infrastructure</p>
+      <div class="pcm-hero__actions">
+        <a href="{{ 'linux/' | url }}" class="md-button md-button--primary">Get Started</a>
+        <a href="{{ 'containers/' | url }}" class="md-button">Browse Guides</a>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+{% endblock %}

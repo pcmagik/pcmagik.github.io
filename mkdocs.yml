@@ -3,86 +3,98 @@ site_url: https://pcmagik.github.io/
 site_description: Technical documentation and guides for Linux, Docker, Kubernetes and Proxmox
 site_author: PC Magik
 
-# Dodaj tę konfigurację na początku pliku
 docs_dir: docs
 
-# Usuń lub zakomentuj duplikaty site_name i nav z górnej części pliku
 nav:
-  - Home: 
-    - Welcome: index.md
+  - Home:
+    - index.md
     - About Me: about.md
-  - Docker:
-    - Setup Ubuntu: setup_docker_ubuntu.md
-    - Setup Debian: setup_docker_debian.md
-    - Setup RHEL: setup_docker_rhel.md
-    - Setup Rootless: setup_docker_rootless.md
-    - Setup WSL: setup_docker_wsl.md
-    - Setup Postinstallation: setup_docker_postinstallation.md
-    - Best Practices: setup_docker_best_practices.md
-  - Kubernetes:
-    - Setup Kubernetes: setup_kubernetes.md
-  - Docker Swarm:
-    - Setup Docker Swarm: setup_docker_swarm.md
-  - Cloud:
-    - Setup Cloud: setup_cloud.md
-  - Proxmox:
-    - Setup Proxmox: setup_proxmox.md
+    - Tags: tags.md
   - Linux:
-    - Setup Linux: setup_linux.md
-    - Setup SSH: setup_ssh.md
-    - Setup User: setup_user.md
-    - Setup VPS: setup_vps.md
-  - LLM:
-    - Setup LLM: setup_llm.md
-  - Tailscale:
-    - Setup Tailscale: setup_tailscale.md
-  - Terraform:
-    - Setup Terraform: setup_terraform.md
-  - Ansible:
-    - Setup Ansible: setup_ansible.md
-  - Packer:
-    - Setup Packer: setup_packer.md
-  - Jenkins:
-    - Setup Jenkins: setup_jenkins.md
-  - Crowdsec:
-    - Setup Crowdsec: setup_crowdsec.md
-
+    - linux/index.md
+    - Linux Essentials: setup_linux.md
+    - SSH Keys: setup_ssh.md
+    - User Management: setup_user.md
+    - VPS Setup: setup_vps.md
+  - Containers:
+    - containers/index.md
+    - Docker on Ubuntu: setup_docker_ubuntu.md
+    - Docker on Debian: setup_docker_debian.md
+    - Docker on RHEL: setup_docker_rhel.md
+    - Docker Rootless: setup_docker_rootless.md
+    - Docker on WSL: setup_docker_wsl.md
+    - Post-Installation: setup_docker_postinstallation.md
+    - Best Practices: setup_docker_best_practices.md
+    - Docker Swarm: setup_docker_swarm.md
+    - Kubernetes (K3s): setup_kubernetes.md
+  - Infrastructure:
+    - infrastructure/index.md
+    - Proxmox VE: setup_proxmox.md
+    - Cloud-Init: setup_cloud.md
+    - LLM & GPU: setup_llm.md
+  - DevOps:
+    - devops/index.md
+    - Terraform: setup_terraform.md
+    - Ansible: setup_ansible.md
+    - Packer: setup_packer.md
+    - Jenkins: setup_jenkins.md
+  - Security:
+    - security/index.md
+    - CrowdSec: setup_crowdsec.md
+    - Tailscale: setup_tailscale.md
   - Support: support.md
-  - Links:
-    - PC Magik Website: https://mateuszpiekut.pl
-    - GitHub: https://github.com/pcmagik
-    - Docker Hub: https://hub.docker.com/u/pcmagik
 
-#  - About: about.md
 theme:
   name: material
+  custom_dir: docs/overrides
   logo: logo.png
   favicon: favicon.png
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.footer
-    - content.code.copy
     - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - header.autohide
+    - announce.dismiss
+    - navigation.prune
   palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: indigo
+      accent: light blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
-    - social
-    - search
-markdown_extensions:
+  - social
+  - search
+  - tags:
+      tags_file: tags.md
+  - glightbox
 
-  # Python Markdown
+markdown_extensions:
   - abbr
   - admonition
   - attr_list
@@ -91,8 +103,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -110,7 +120,11 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -118,6 +132,24 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra:
+  tags:
+    Linux: linux
+    SSH: ssh
+    VPS: vps
+    Docker: docker
+    Swarm: swarm
+    Kubernetes: kubernetes
+    Proxmox: proxmox
+    Cloud: cloud
+    LLM: llm
+    GPU: gpu
+    DevOps: devops
+    Terraform: terraform
+    Ansible: ansible
+    Packer: packer
+    Jenkins: jenkins
+    Security: security
+    VPN: vpn
   social:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@PCMagik
@@ -129,12 +161,16 @@ extra:
       link: https://www.linkedin.com/in/mateusz-piekut/
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/pcmagik
-
   analytics:
     provider: google
     property: G-1CXE00KE0K
   consent:
     title: Cookie consent
-    description: >- 
-      We use cookies to enhance your experience on our site, recognize your repeat visits and preferences, as well as to track the effectiveness of our documentation and the relevance of the content we provide. Your consent will help us improve our resources and ensure they meet your needs. You have the option to customize your cookie settings to best suit your privacy preferences. Your support in this helps us continually refine our content and tools to better serve you and the community.
+    description: >-
+      We use cookies to enhance your experience on our site, recognize your
+      repeat visits and preferences, as well as to track the effectiveness
+      of our documentation and the relevance of the content we provide.
+      Your consent will help us improve our resources and ensure they meet
+      your needs.
+
 copyright: Copyright &copy; 2025-2026 PC Magik

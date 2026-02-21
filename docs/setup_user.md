@@ -1,3 +1,8 @@
+---
+tags:
+  - Linux
+---
+
 # Linux User Management
 
 A guide covering user creation, password management, sudo configuration, and non-root Docker patterns.

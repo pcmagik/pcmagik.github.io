@@ -1,3 +1,9 @@
+---
+tags:
+  - Linux
+  - VPS
+---
+
 # Complete Configuration Guide for Ubuntu 24.04 LTS ARM64 VPS Server
 
 ## Set the Timezone to Warsaw

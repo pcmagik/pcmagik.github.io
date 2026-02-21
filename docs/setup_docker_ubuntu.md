@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Install Docker Engine on Ubuntu
 
 To get started with Docker Engine on Ubuntu, ensure you meet the prerequisites and follow the installation steps.

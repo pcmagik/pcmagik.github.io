@@ -1,3 +1,9 @@
+---
+tags:
+  - Security
+  - VPN
+---
+
 # Tailscale Setup Guide
 
 A guide for installing and configuring Tailscale as a mesh VPN, including subnet routing, exit nodes, and Docker integration.

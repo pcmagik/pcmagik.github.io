@@ -1,3 +1,8 @@
+---
+tags:
+  - Proxmox
+---
+
 # Proxmox VE Setup Guide
 
 A comprehensive guide for Proxmox Virtual Environment configuration, optimization, and management.

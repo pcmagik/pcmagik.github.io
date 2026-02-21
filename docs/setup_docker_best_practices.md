@@ -1,8 +1,11 @@
+---
+tags:
+  - Docker
+---
+
 # Docker Best Practices
 
 A collection of best practices for Docker including cleanup, multi-stage builds, non-root containers, security, logging, and monitoring.
-
----
 
 ## Docker Cleanup and Disk Management
 

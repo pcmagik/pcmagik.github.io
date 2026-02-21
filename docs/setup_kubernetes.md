@@ -1,8 +1,11 @@
+---
+tags:
+  - Kubernetes
+---
+
 # Kubernetes (K3s) Setup Guide
 
 A comprehensive guide for installing and configuring a lightweight Kubernetes cluster using K3s on Ubuntu.
-
----
 
 ## What is K3s?
 

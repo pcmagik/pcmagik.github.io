@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Install Docker Engine on RHEL
 
 To get started with Docker Engine on RHEL, ensure you meet the prerequisites and follow the installation steps.

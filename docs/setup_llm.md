@@ -1,3 +1,9 @@
+---
+tags:
+  - LLM
+  - GPU
+---
+
 # Local LLM Setup Guide
 
 A guide for running large language models locally using NVIDIA GPU passthrough, Ollama, and Open WebUI.

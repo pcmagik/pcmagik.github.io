@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Install Docker Engine on Debian
 
 To get started with Docker Engine on Debian, make sure you meet the prerequisites, and then follow the installation steps.

@@ -1,3 +1,9 @@
+---
+tags:
+  - DevOps
+  - Packer
+---
+
 # Packer Setup Guide
 
 A guide for installing HashiCorp Packer and creating automated machine images for various platforms.

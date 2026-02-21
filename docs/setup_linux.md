@@ -1,3 +1,8 @@
+---
+tags:
+  - Linux
+---
+
 # Linux Administration Essentials
 
 A quick-reference guide covering the most common Linux administration tasks for homelab and server environments.

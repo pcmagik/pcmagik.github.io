@@ -1,3 +1,8 @@
+---
+tags:
+  - Security
+---
+
 # CrowdSec Setup Guide
 
 A guide for installing and configuring CrowdSec as a collaborative intrusion prevention system with firewall bouncer integration.
