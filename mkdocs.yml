@@ -163,7 +163,7 @@ extra:
       link: https://hub.docker.com/u/pcmagik
   analytics:
     provider: google
-    property: G-1CXE00KE0K
+    property: G-X8C30E15HE
   consent:
     title: Cookie consent
     description: >-
