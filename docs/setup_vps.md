@@ -17,16 +17,16 @@ sudo apt-get install git gh -y
 ```
 
 ## Add a New User and Grant Sudo Privileges
-Replace `pcmagik` with your desired username.
+Replace `your_username` with your desired username.
 ```bash
-sudo adduser pcmagik
-sudo usermod -aG sudo pcmagik
+sudo adduser your_username
+sudo usermod -aG sudo your_username
 ```
 
-## Add no pssword sudo access for the new user
+## Add no password sudo access for the new user
 ```bash
-echo "pcmagik ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/pcmagik
-sudo chmod 0440 /etc/sudoers.d/pcmagik
+echo "your_username ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/your_username
+sudo chmod 0440 /etc/sudoers.d/your_username
 ```
 
 ## Set Up SSH Keys for the New User
@@ -39,13 +39,13 @@ cd ~/.ssh
 
 ### 2. Generate an SSH Key Pair
 ```bash
-ssh-keygen -b 4096 -t rsa -f pcmagik-zurich-arm-docker-pcmagik-com
+ssh-keygen -b 4096 -t rsa -f my-server-key
 ```
 
 ### 3. Add the Public Key to `authorized_keys`
 #### Method 1: Append the Key
 ```bash
-cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub >> ~/.ssh/authorized_keys
+cat ~/.ssh/my-server-key.pub >> ~/.ssh/authorized_keys
 ```
 
 ### 4. Set Permissions
@@ -62,7 +62,7 @@ sudo apt install putty-tools
 ### 6. Convert the Private Key to PPK Format
 
 ```bash
-puttygen ~/pcmagik-zurich-arm-docker-pcmagik-com -o ~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk
+puttygen ~/my-server-key -o ~/.ssh/my-server-key.ppk
 ```
 ---
 ## Chicken and Egg Problem with SSH Keys
@@ -70,44 +70,44 @@ Now we need to copy the keys to local machine, and we have three options:
 ### Option 1: Use `scp` (if password authentication is enabled)
 #### For Windows (PowerShell):
 ```powershell
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com C:\Users\YourUser\Downloads\
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub C:\Users\YourUser\Downloads\
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk C:\Users\YourUser\Downloads\
+scp your_user@server_address:~/.ssh/my-server-key C:\Users\YourUser\Downloads\
+scp your_user@server_address:~/.ssh/my-server-key.pub C:\Users\YourUser\Downloads\
+scp your_user@server_address:~/.ssh/my-server-key.ppk C:\Users\YourUser\Downloads\
 ```
 
 #### For Linux/macOS:
 ```bash
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com ~/Downloads/
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub ~/Downloads/
-scp your_user@server_address:~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk ~/Downloads/
+scp your_user@server_address:~/.ssh/my-server-key ~/Downloads/
+scp your_user@server_address:~/.ssh/my-server-key.pub ~/Downloads/
+scp your_user@server_address:~/.ssh/my-server-key.ppk ~/Downloads/
 ```
 
 #### Alternative: Use `ssh-copy-id`
 If you have password authentication to the server, you can use `ssh-copy-id` to copy the public key to the server. This will allow you to log in without a password. But you need to generate the keys first on local machine and copy them to the server.
 ```bash
-ssh-copy-id -i ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub your_user@server_address
+ssh-copy-id -i ~/.ssh/my-server-key.pub your_user@server_address
 ```
 
 ### Option 2: Copy via another user (if you only have SSH key authentication)
 #### 2.1 Copy Keys to the `ubuntu` User's Home Directory
 ```bash
-sudo cp pcmagik-zurich-arm-docker-pcmagik-com /home/ubuntu/
-sudo cp pcmagik-zurich-arm-docker-pcmagik-com.pub /home/ubuntu/
+sudo cp my-server-key /home/ubuntu/
+sudo cp my-server-key.pub /home/ubuntu/
 ```
 
 #### 2.2 Change Ownership and Permissions of the Keys
 ```bash
-sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com
-sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com.pub
-sudo chmod 600 /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com
-sudo chmod 644 /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com.pub
+sudo chown ubuntu:ubuntu /home/ubuntu/my-server-key
+sudo chown ubuntu:ubuntu /home/ubuntu/my-server-key.pub
+sudo chmod 600 /home/ubuntu/my-server-key
+sudo chmod 644 /home/ubuntu/my-server-key.pub
 ```
 
 ### Option 3: Manual Copy-Paste
 Just use "cat" command to show private and public keys, copy and save it to your local machine:
 ```bash
-cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub
-cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com
+cat ~/.ssh/my-server-key.pub
+cat ~/.ssh/my-server-key
 ```
 
 ## BONUS
@@ -133,8 +133,8 @@ gh auth login
 
 ## Set Global Git Configurations
 ```bash
-git config --global user.name "Mateusz Piekut"
-git config --global user.email "serwis.pcmagik@gmail.com"
+git config --global user.name "Your Name"
+git config --global user.email "user@example.com"
 ```
 
 ## Update, Upgrade, and Clean the System

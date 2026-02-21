@@ -10,7 +10,7 @@ cd ~/.ssh
 
 ## 2. Generate an SSH Key Pair
 ```bash
-ssh-keygen -b 4096 -t rsa -f pcmagik-zurich-arm-docker-pcmagik-com
+ssh-keygen -b 4096 -t rsa -f my-server-key
 ```
 
 ## 3. Add the Public Key to `authorized_keys`
@@ -18,7 +18,7 @@ You can use one of the following methods:
 
 ### Method 1: Append the Key
 ```bash
-cat ~/.ssh/pcmagik-zurich-arm-docker-pcmagik-com.pub >> ~/.ssh/authorized_keys
+cat ~/.ssh/my-server-key.pub >> ~/.ssh/authorized_keys
 ```
 
 ### Method 2: Echo the Key
@@ -40,18 +40,18 @@ sudo apt install putty-tools
 
 ## 6. Convert the Private Key to PPK Format
 ```bash
-puttygen ~/pcmagik-zurich-arm-docker-pcmagik-com -o ~/.ssh/pcmagik-zurich-arm-docker-gronioss-pamagik-com.ppk
+puttygen ~/my-server-key -o ~/.ssh/my-server-key.ppk
 ```
 
 ## 7. Copy Keys to the `ubuntu` User's Home Directory
 ```bash
-sudo cp pcmagik-zurich-arm-docker-pcmagik-com /home/ubuntu/
-sudo cp pcmagik-zurich-arm-docker-pcmagik-com.pub /home/ubuntu/
+sudo cp my-server-key /home/ubuntu/
+sudo cp my-server-key.pub /home/ubuntu/
 ```
 
 ## 8. Change Ownership of the Keys
 ```bash
-sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com
-sudo chown ubuntu:ubuntu /home/ubuntu/pcmagik-zurich-arm-docker-pcmagik-com.pub
+sudo chown ubuntu:ubuntu /home/ubuntu/my-server-key
+sudo chown ubuntu:ubuntu /home/ubuntu/my-server-key.pub
 ```
 
