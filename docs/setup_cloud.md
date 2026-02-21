@@ -1,3 +1,8 @@
+---
+tags:
+  - Cloud
+---
+
 # Cloud-Init Setup Guide
 
 A guide for using cloud-init to automate virtual machine provisioning, with focus on Proxmox templates.

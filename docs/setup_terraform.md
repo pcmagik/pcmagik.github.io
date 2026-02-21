@@ -1,3 +1,9 @@
+---
+tags:
+  - DevOps
+  - Terraform
+---
+
 # Terraform Setup Guide
 
 A guide for installing Terraform and configuring it for infrastructure as code workflows.

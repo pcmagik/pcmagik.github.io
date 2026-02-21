@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Manage Docker as a Non-Root User
 
 The Docker daemon binds to a Unix socket, not a TCP port. By default, the root user owns the Unix socket, and other users can only access it using `sudo`. The Docker daemon always runs as the root user.

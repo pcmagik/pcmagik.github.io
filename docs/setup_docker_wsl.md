@@ -1,3 +1,8 @@
+---
+tags:
+  - Docker
+---
+
 # Setting Up Docker with WSL
 
 ## 1. Install and Configure WSL

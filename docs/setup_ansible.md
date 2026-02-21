@@ -1,3 +1,9 @@
+---
+tags:
+  - DevOps
+  - Ansible
+---
+
 # Ansible Setup Guide
 
 A guide for installing Ansible and getting started with infrastructure automation.

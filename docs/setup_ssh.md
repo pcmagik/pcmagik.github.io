@@ -1,3 +1,9 @@
+---
+tags:
+  - Linux
+  - SSH
+---
+
 # Setting Up SSH Keys
 
 Follow the steps below to set up SSH keys:

@@ -1,3 +1,9 @@
+---
+tags:
+  - DevOps
+  - Jenkins
+---
+
 # Jenkins Setup Guide
 
 A guide for running Jenkins with Docker, including Docker-in-Docker support, agent configuration, and pipeline basics.

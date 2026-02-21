@@ -1,0 +1,122 @@
+/* Header gradient (indigo tones) */
+.md-header {
+  background: linear-gradient(135deg, #303f9f, #1a237e, #283593);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+
+/* Sticky tabs shadow */
+.md-tabs {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid card hover - lift effect */
+.md-typeset .grid.cards > ul > li {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Back-to-top button color */
+.md-top {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Hero section - full bleed via container overflow override */
+.md-container:has(.pcm-hero) {
+  overflow-x: clip;
+}
+
+.pcm-hero {
+  background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #303f9f 100%);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+[data-md-color-scheme="slate"] .pcm-hero {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
+}
+
+.pcm-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.pcm-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: white;
+}
+
+.pcm-hero__icon {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.pcm-hero__icon svg {
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+}
+
+.pcm-hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pcm-hero__actions .md-button {
+  border-color: white;
+  color: white;
+}
+
+.pcm-hero__actions .md-button--primary {
+  background-color: white;
+  color: #1a237e;
+  border-color: white;
+}
+
+.pcm-hero__actions .md-button--primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Announcement bar */
+.md-banner {
+  background-color: #ff6d00;
+  color: white;
+}
+
+.md-banner a {
+  color: white;
+}
+
+/* Glightbox overlay */
+.glightbox-clean .gslide-description {
+  background: var(--md-default-bg-color);
+}
+
+/* Tags */
+.md-tags {
+  margin-bottom: 0.5rem;
+}

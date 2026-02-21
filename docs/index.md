@@ -1,18 +1,62 @@
-# Welcome to PC Magik Documentation
+---
+hide:
+  - navigation
+  - toc
+hero: true
+---
 
-This documentation provides comprehensive guides and tutorials for:
+# PC Magik Docs
 
-- 🐳 Docker & Container Management
-- ☸️ Kubernetes Orchestration
-- 🐧 Linux System Administration
-- 🖥️ Proxmox Virtualization
-- 🔄 DevOps Practices
-- 🤖 Automation Solutions
+Technical guides for Linux, Docker, Kubernetes, and homelab infrastructure.
 
-## Quick Links
+<div class="grid cards" markdown>
 
-- [Setup Guide](setup.md)
-- [Usage Examples](usage.md)
-- [Support Options](support.md)
+-   :material-penguin: __Linux__
 
-For full documentation visit [our GitHub repository](https://github.com/pcmagik/documentation).
+    ---
+
+    System administration, SSH keys, user management, and VPS setup.
+
+    [:octicons-arrow-right-24: Explore](linux/index.md)
+
+-   :material-docker: __Containers__
+
+    ---
+
+    Docker installation, configuration, Swarm orchestration, and Kubernetes.
+
+    [:octicons-arrow-right-24: Explore](containers/index.md)
+
+-   :material-server-network: __Infrastructure__
+
+    ---
+
+    Proxmox virtualization, Cloud-Init provisioning, and GPU workloads.
+
+    [:octicons-arrow-right-24: Explore](infrastructure/index.md)
+
+-   :material-infinity: __DevOps__
+
+    ---
+
+    Terraform, Ansible, Packer, and Jenkins CI/CD pipelines.
+
+    [:octicons-arrow-right-24: Explore](devops/index.md)
+
+-   :material-shield-lock: __Security__
+
+    ---
+
+    CrowdSec intrusion prevention and Tailscale VPN mesh networking.
+
+    [:octicons-arrow-right-24: Explore](security/index.md)
+
+-   :material-heart: __Support__
+
+    ---
+
+    Find this project useful? Consider supporting its development.
+
+    [:octicons-arrow-right-24: Learn more](support.md)
+
+</div>
